@@ -31,7 +31,7 @@ export default function Institution() {
   // Get params from URL
   const params = new URLSearchParams(window.location.search);
   const institutionId = params.get('id');
-  const backendUrl = params.get('backend') || 'https://incident-admin-tool.manus.space';
+  const backendUrl = params.get('backend') || 'https://3000-i6ioccowiv29g4dxplu8n-c79ad93e.sg1.manus.computer';
   const type = (params.get('type') || 'linked') as 'linked' | 'authorised';
 
   useEffect(() => {
@@ -190,9 +190,7 @@ export default function Institution() {
           </div>
         )}
 
-        <div className="mt-6 text-center text-xs text-gray-500">
-          Made with Manus
-        </div>
+
       </div>
     </div>
   );
